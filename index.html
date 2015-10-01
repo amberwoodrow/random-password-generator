@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <section class="container" ng-controller="appController">
+      <h1>Number Guessing Game!</h1>
+      <form>
+        <section class="form-group">
+          <label for="userGuess">Enter a number 6-20</label>
+          <input type="text" class="form-control" ng-model="length" placeholder="0">
+        </section>
+      </form>
+
+      <h4>
+        {{ randPassword(length) }}
+      </h4>
+
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="randPass.js"></script>
+  </body>
+</html>
